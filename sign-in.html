@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-in.css">
+    <title>Sign in page</title>
+</head>
+<body>
+    <div class="box">
+        <h2>Sign in</h2>
+        <form>
+            <div class="inputBox">
+                <label>Username</label>
+                <input type="text" placeholder="Username" required="" id="username">
+            </div>
+            <div class="inputBox">
+                <label>Password</label>
+                <input type="password" placeholder="password" required="" id="password">
+                <button id="revealPassword"></i></button>
+            </div>
+            <input type="submit" name="submit" value="Submit" id="submit">
+            <p>Don't have an account? <a href="sign-up.html">Sign up</a></p>
+            <p id="error">Wrong Username or Password!!</p>
+        </form>
+    </div>
+
+    <script src="sign-in.js"></script>
+</body>
+</html>

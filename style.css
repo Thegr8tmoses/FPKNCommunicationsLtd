@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background: url('https://cdn.pixabay.com/video/2023/10/17/185365-875417518_large.mp4') no-repeat center;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    /* Remove the background property or replace it with a valid image URL */
+}
+
+nav{
+    width: 100%;
+    top:0;
+    margin:1px auto;
+    display:flex;
+    flex-flow: row wrap;
+    min-width: 470px;
+    background-color: #fff;
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    align-items: center;
+    position:sticky;
+}
+
+nav:active{
+    color:#7834a8;
+    border-bottom: 2px solid #7834a8;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 5px auto;
+    padding:5px;
+    /* border: 1px solid red; */
+}
+
+nav ul li{
+    margin: 0 20px;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    transition: color 0.5s;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color  0.5s;
+}
+
+nav ul li a:hover{
+    color: #7834a8;
+    border-bottom: 2px solid #7834a8;
+
+}
+
+nav button{
+    box-shadow:  2px 1px rgba(0,0,0,0.4);
+    width: 30px;
+    height: 28px;
+    background-color: #444c454d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+nav button image{
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+}
+
+nav button:hover{
+    background-color: #7834a8;
+}
+
+#main{
+    display:flex;
+    flex-flow: row wrap;
+    /* width:80%; */
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    max-width:500px;
+    height: 100%;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+
+
+
+#movingImages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin: 15px auto;
+    padding: 1px;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+#movingImages img {
+    position:static;
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 2px 7px 15px rgba(0,0,0,0.5);
+    animation: slideshow 3s infinite linear;
+}
+
+ .picture1, .picture2, .picture3{
+    position: fixed;
+    width: 100%;
+    min-width: 80%;
+    height: 100%;
+    border: 2px solid red;
+    /* box-shadow: 2px 7px 15px rgba(0,0,0,0.5); */
+    animation: slideshow 3s infinite linear;
+    object-fit:fill;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@keyframes slideshow {
+    0% { left: 0px; }
+    20% { left: 10%; }
+    33.33% { left: 10%; }
+    53.33% { left: 10%; }
+    100% { left: 10%; }
+}
+
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+    margin: 15px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.serv{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:1px;
+}
+
+.text{
+    margin: 5px auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.serv img{
+    width: 65%;
+    min-width: 250px;
+    max-width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    box-shadow: 2px 7px 15px rgba(0,0,0,0.5);
+    margin: 10px auto;
+    box-sizing: border-box;
+    /* border:1px solid black; */
+}
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 100%;
+    margin: 15px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    margin: 15px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
