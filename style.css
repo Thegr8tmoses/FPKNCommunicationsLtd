@@ -2,34 +2,32 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    background: url('https://cdn.pixabay.com/video/2023/10/17/185365-875417518_large.mp4') no-repeat center;
 }
 
 body{
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.483),rgba(19, 2, 2, 0.397)) ,url('https://images.unsplash.com/photo-1548685913-fe6678babe8d?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') repeat center center/cover;
     font-family: 'Poppins', sans-serif;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     color: #333;
     font-size: 16px;
     text-align: center;
-    /* Remove the background property or replace it with a valid image URL */
 }
 
 .navbar{
     width: 100%;
     height:50px;
     top:0;
-    margin:1px 1px 50px 1px;
     display:flex;
     flex-flow: row wrap;
     min-width: 470px;
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
-    /* border-radius: 10px; */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     text-align: center;
     align-items: center;
-    position:sticky;
+    position:fixed;
+    z-index: 2;
 }
 
 .nav-icons{
@@ -91,31 +89,32 @@ nav .list a:hover{
 
 .nav-link{
     font-size: 16px;
-    transition: color  0.5s,font-size 0.5s;
+    transition: color  0.5s, font-size 0.7s, padding 0.7s;
 }
 
 nav .nav-link:hover{
     color: #7834a8;
     font-size:18px;
+    padding:0 0 3px 0;
     border-bottom: 2px solid #7834a8;
 }
 
 .menu{
     position:absolute;
-    padding:2px 0;
-    width:30px;
+    padding:2px;
+    width:32px;
     right:20px;
     top:12px;
-    height: 28px;
+    height: 30px;
     background-color: #0f0f0f00;
     box-sizing: border-box;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 9px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color 0.5s;
+    transition: background-color 0.6s;
 }
 
 .nav-text{
@@ -125,8 +124,8 @@ nav .nav-link:hover{
 nav button img{
     width: 20px;
     height: 20px;    
-    box-sizing: border-box;
-    margin:0;
+    /* box-sizing: border-box; */
+    margin:2px;
     padding:0;
 }
 
@@ -145,10 +144,6 @@ nav button img{
     background-color:rgba(255, 255, 255, 1);
 }
 
-.visible{
-    display:block;
-}
-
 
 .list li{
     margin:5px;
@@ -158,6 +153,7 @@ nav button img{
 
 nav button:hover{
     background-color: #7834a8b7;
+    padding: 2px;
 }
 
 #main{
@@ -171,15 +167,40 @@ nav button:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 65%;
+    width: 75%;
     max-width:500px;
     height: 100%;
-    margin: 15px auto;
+    margin: 70px auto 40px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     text-align: center;
+}
+
+.herobtn{
+    border: 0 solid black;
+    padding:10px;
+    margin: 10px 2px 2px 2px;
+    background-color:#7834a890;
+    border-radius:10px;
+    /* width */
+    box-shadow: 0 5px 5px black;
+    text-align:center;
+    cursor: pointer;
+    transition: padding 0.5s,border-radius 0.5s,color 0.5s;
+}
+
+.herobtn:hover{
+    padding:18px;
+    border-radius:20px;
+    color: white;
+}
+
+.hero-text{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
 
 #movingImages {
@@ -191,25 +212,29 @@ nav button:hover{
     height: 400px;
     margin: 15px auto;
     padding: 1px;
-    background-color: #fff;
+    background-color: transparent;
     text-align: center;
     overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, #ece9e9 5% 90%, transparent);
 }
 
 
- .pictureS{
+.pictureS{
     position: static;
-    width: 100%;
+    width: 80%;
+    margin:0 8px 0 8px;
+    border:8px ridge black;
     height: 100%;
-    animation: slideshow 10s alternate infinite linear;
+    animation: slideshow 20s alternate infinite linear;
     object-fit:cover;
     text-align: center;
+    box-shadow: 2px 7px 15px rgba(0,0,0,0.6);
     box-sizing: border-box;
 }
 
 @keyframes slideshow {
     0%{
-        transform: translateX(125%);
+        transform: translateX(150%);
     }
     10%{
         transform: translateX(100%);
@@ -239,7 +264,7 @@ nav button:hover{
         transform: translateX(-100%);
     }
     100%{
-        transform: translateX(-125%);
+        transform: translateX(-150%);
     }
 }
 
@@ -248,13 +273,46 @@ nav button:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 85%;
     height: 100%;
-    margin: 15px auto;
+    margin: 50px auto 30px auto;
     padding: 30px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 22px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.servicebtn{
+    border: 0 solid black;
+    padding:15px;
+    height:25%;
+    width:fit-content;
+    margin: 10px 20px 2px 20px;
+    cursor: pointer;
+    border-radius:15px;
+    background-color:#7834a890;
+    box-shadow: 0 5px 5px black;
+    text-align:center;
+    align-items: center;
+    transition: padding 0.5s, border-radius 0.5s;
+}
+
+.servicebtn:hover{
+    padding:18px;
+    border-radius:30px;
+    color:white;
+}
+
+.servicebtn-text{
+    font-weight: 700;
+    text-shadow: 0 1px 2px white;
+    text-decoration: none;
+    color:black;
+}
+
+.servimg{
+    width:30px;
+    margin:1px auto;
 }
 
 .serv{
@@ -273,13 +331,18 @@ nav button:hover{
     padding: 10px;
 }
 
-.serv img{
-    width: 65%;
+.serv ul{
+    text-align: left;
+}
+
+.servdisplay{
+    width: 75%;
     min-width: 250px;
     max-width: 100%;
     height: 70%;
     border-radius: 20px;
-    box-shadow: 2px 7px 15px rgba(0,0,0,0.5);
+    border:8px ridge black;
+    box-shadow: 2px 7px 15px rgba(0,0,0,0.6);
     margin: 10px auto;
     box-sizing: border-box;
     /* border:1px solid black; */
@@ -290,14 +353,112 @@ nav button:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 65%;
+    width: 85%;
     height: 100%;
     margin: 15px auto;
     padding: 50px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 22px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     text-align: center;
+}
+
+#portfolio h2{
+    margin: 10px auto;
+    font-weight: 700;
+}
+.portactive{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 15px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.gallery{
+    border-radius:20px;
+    box-sizing: border-box;
+    padding:10px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    position: sticky;
+    display:flex;
+    /* border:1px solid blue;--for-debugging */
+    margin:15px auto;
+    flex-flow: row nowrap;
+}
+#portimg-banner, #portimg-poster, #portimg-flyer{
+    border:6px ridge black;
+    position: static;
+    width:100%;
+    height: 500px;
+    border-radius:20px;
+    box-shadow: 2px 7px 15px rgba(0,0,0,0.7);
+    margin:5px auto;
+    display: flex;
+    transition: border 1s;
+}
+
+#portimg-banner:hover, #portimg-poster:hover, #portimg-flyer:hover{
+    border:15px ridge #7834a8;
+}
+
+#port-banner, #port-poster, #port-flyer{
+    /* border:1px solid green;--for debugging */
+    padding:5px;
+    margin:5px auto;
+    align-items: center;
+    z-index: 2;
+    top:20px;
+    font-size: 50px;
+    position:absolute;
+    height: 50px;
+}
+#portimg-banner{
+    display:block;
+}
+#portimg-poster, #portimg-flyer, .posters, .flyers{
+    display:none;
+}
+.port-buttons{
+    padding:1px;
+    margin:2px auto;
+    position:static;
+    bottom:1px;
+}
+.portbtnleft, .portbtnright{
+    border:0 solid black;
+    margin:5px;
+    height: 40px;
+    width:40px;
+    padding:2px;
+    background-color:transparent;
+    border-radius: 15px;
+    align-content: center;
+    transition: background-color 0.5s;
+}
+
+.scrollbtnimg{
+    width:90%;
+    height:90%;
+    margin:1px;
+    border-radius:12.5px;
+    margin:1px auto;
+}
+
+.portbtnleft:hover, .portbtnright:hover{
+    background-color: #7834a88d;
+    color:white;
 }
 
 #contact{
@@ -312,4 +473,9 @@ nav button:hover{
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     text-align: center;
+}
+
+footer{
+    background-color: white;
+    height:30px;
 }
