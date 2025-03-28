@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FPKN Communication</title>
+    <title>FPKN Communications</title>
+    <link rel="icon" href="logoicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-chubby/css/uicons-regular-chubby.css'>
 </head>
 <body>
     <header>
         <nav class="navbar">
+            <div id="logo">
+                <img src="logoicon.png" alt="logo" class="navlogo">
+                <h1 class="logotxt"><span style="font-size:32px;color:#681aa0;">FPKN</span> <span style="color:rgb(255, 136, 0)">COMMUNICATIONS</span></h1>
+            </div>
             <div class="nav-icons">
                 <a href="#" class="nav-link">
                     <span class="nav-text">Home</span>
@@ -17,15 +22,15 @@
                 </a>
                 <a href="#services" class="nav-link">
                     <span class="nav-text">Services</span>
-                    <img src="corporate-alt.png" alt="services" class="nav-icon">
+                    <img src="corporate-alt.png" alt="home" class="nav-icon">
                 </a>
                 <a href="#portfolio" class="nav-link">
                     <span class="nav-text">Portfolio</span>
-                    <img src="features.png" alt="features" class="nav-icon">
+                    <img src="features.png" alt="home" class="nav-icon">
                 </a>
                 <a href="#contact" class="nav-link">
                     <span class="nav-text">Contact</span>
-                    <img src="customer-service.png" alt="contact" class="nav-icon">
+                    <img src="customer-service.png" alt="home" class="nav-icon">
                 </a>
             </div>
             <div id="menu">
@@ -35,12 +40,13 @@
                         <li><a href="#">Bookings</a></li>
                     </ul>
                 </div>
-                <button class="menu"><img src="apps.png" alt="menu-icon"></button>
+                <button class="menu"><img src="menu.png" alt="menu-icon"></button>
             </div>
         </nav>
     </header>
 
     <section id="hero">
+        <img src="logo.png" alt="" class="logo">
         <h1>Welcome to <br><span style="font-weight: 700;font-size: 100%;" class="fpkn">FPKN COMMUNICATIONS</span></h1>
         <p>We help businesses reach their target audience through effective advertising strategies.</p>
         <button class="herobtn">
@@ -81,12 +87,18 @@
         <section id="portfolio">
             <h2 style="border-bottom: 4px solid black;">Our Portfolio</h2>
             <div class="gallery">
+                <div id="portimg-banner" class="slides">
                     <h2 id="port-banner" class="banners">Banners</h2>
-                    <img id="portimg-banner" class="banners" src="https://images.unsplash.com/photo-1612332883331-e8ea07a15f14?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banners">
+                    <img class="banners" src="https://images.unsplash.com/photo-1612332883331-e8ea07a15f14?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banners">
+                </div>
+                <div id="portimg-poster" class="slides">
                     <h2 id="port-poster" class="posters">Posters</h2>
-                    <img id="portimg-poster" class="posters" src="https://images.unsplash.com/photo-1629005514669-70e8bbfcf917?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Posters">
+                    <img  class="posters" src="https://images.unsplash.com/photo-1629005514669-70e8bbfcf917?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Posters">
+                </div>
+                <div id="portimg-flyer" class="slides">
                     <h2 id="port-flyer" class="flyers">Flyers</h2>
-                <img id="portimg-flyer" class="flyers" src="https://images.unsplash.com/photo-1616276323789-fc4b1c0b258a?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 3">
+                    <img class="flyers" src="https://images.unsplash.com/photo-1616276323789-fc4b1c0b258a?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 3">
+                </div>
             </div>
             <div class="port-buttons">
                 <button class="portbtnleft"><img src="leftbtn.png" alt="" class="scrollbtnimg"></button>
@@ -103,7 +115,6 @@
             </div>
         </section>
     </div>
-
     <footer>
         <p>&copy; 2025 FPKN Communications Ltd. All rights reserved.</p>
     </footer>
