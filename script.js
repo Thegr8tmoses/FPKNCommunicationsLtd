@@ -34,8 +34,23 @@ function handleResponsiveNavbar() {
     navLinks.forEach(link => {
         const textElement = link.querySelector('.nav-text');
         const iconElement = link.querySelector('.nav-icon');
-
-        if (screenWidth <= 750) {
+        
+        if (screenWidth <= 400) {
+            textElement.style.display = 'none';
+            iconElement.style.display = 'block';
+            navicons.style.position = 'relative';
+            navicons.style.right = '0px';
+            btn.style.right = '50px';
+            navicons.style.marginTop = '-15px';
+            nav.innerWidth = '80%';
+            services.style.width = '65%';
+            servtext.style.display = 'none';
+            servimg.style.display = 'block';
+            servbtn.style.width = 'fit-content';
+            navicons.style.alignItems = 'center';
+            portfolio.style.width = '85%';
+        }
+        else if (screenWidth <= 750) {
             textElement.style.display = 'none';
             iconElement.style.display = 'block';
             navicons.style.position = 'relative';
@@ -47,7 +62,7 @@ function handleResponsiveNavbar() {
             servimg.style.display = 'block';
             servbtn.style.width = 'fit-content';
             portfolio.style.width = '85%';
-        } else {
+        }else {
             textElement.style.display = 'block';
             iconElement.style.display = 'none';
             navicons.style.position = 'absolute';
