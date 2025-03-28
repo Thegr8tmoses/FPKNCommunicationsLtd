@@ -104,7 +104,7 @@ nav .nav-link:hover{
     padding:2px;
     width:32px;
     right:20px;
-    top:12px;
+    top:10px;
     height: 30px;
     background-color: #0f0f0f00;
     box-sizing: border-box;
@@ -273,10 +273,11 @@ nav button:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     width: 85%;
     height: 100%;
     margin: 50px auto 30px auto;
-    padding: 30px;
+    padding: 20px;
     background-color: #fff;
     border-radius: 22px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -326,13 +327,19 @@ nav button:hover{
 }
 
 .text{
-    margin: 5px auto;
+    margin: 10px auto;
     box-sizing: border-box;
-    padding: 10px;
+    left:10px;
+    padding: 15px;
+    /* border:1px solid black;--for debugging */
 }
 
 .serv ul{
     text-align: left;
+    /* border:1px solid black;--for debugging */
+    margin:8px auto;
+    list-style: none;
+    padding: 5px;
 }
 
 .servdisplay{
@@ -415,6 +422,9 @@ nav button:hover{
 
 #port-banner, #port-poster, #port-flyer{
     /* border:1px solid green;--for debugging */
+    mix-blend-mode: difference;
+    text-shadow: 0 1px 20px white;
+    color: black;
     padding:5px;
     margin:5px auto;
     align-items: center;
@@ -477,5 +487,5 @@ nav button:hover{
 
 footer{
     background-color: white;
-    height:30px;
+    height:50px;
 }
