@@ -16,7 +16,14 @@ const servimg  = document.querySelector('.service-img');
 const screenWidth = window.innerWidth;
 
 
-
+menu.addEventListener('mouseenter', function(menuErr) {
+    menuErr.preventDefault();
+        menu.style.display = 'block'
+    });
+menu.addEventListener('mouseleave', function(menuErr) {
+    menuErr.preventDefault();
+    menu.style.display = 'none';
+});
 
 btn.addEventListener('click', function(error) {
     error.preventDefault();
@@ -26,6 +33,8 @@ btn.addEventListener('click', function(error) {
         menu.style.display = 'none';
     }
 });
+
+
 
 function handleResponsiveNavbar() {
     const navLinks = document.querySelectorAll('.nav-link');
