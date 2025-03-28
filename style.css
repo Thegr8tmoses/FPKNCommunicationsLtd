@@ -329,6 +329,7 @@ nav button:hover{
 .text{
     margin: 10px auto;
     box-sizing: border-box;
+    text-decoration: none;
     left:10px;
     padding: 15px;
     /* border:1px solid black;--for debugging */
@@ -336,6 +337,7 @@ nav button:hover{
 
 .serv ul{
     text-align: left;
+    text-decoration: none;
     /* border:1px solid black;--for debugging */
     margin:8px auto;
     list-style: none;
