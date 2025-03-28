@@ -52,6 +52,7 @@ function handleResponsiveNavbar() {
             navicons.style.right = '0px';
             navicons.style.marginTop = '-15px';
             nav.innerWidth = '80%';
+            menu.style.left = '90px';
             services.style.width = '65%';
             servtext.style.display = 'none';
             logotext.style.display = 'none';
@@ -65,6 +66,7 @@ function handleResponsiveNavbar() {
             btn.style.left = '70px';
             btn.style.right = '20px';
             btn.style.top = '10px';
+            menu.style.left = '90px';
             logotext.style.display = 'none';
             iconElement.style.display = 'block';
             navicons.style.position = 'relative';
@@ -79,7 +81,8 @@ function handleResponsiveNavbar() {
         }else {
             textElement.style.display = 'block';
             iconElement.style.display = 'none';
-            btn.style.left = '95%';
+            btn.style.left = '';
+            menu.style.left = '';
             btn.style.right = '20px';
             logotext.style.display = 'block';
             navicons.style.position = 'absolute';
