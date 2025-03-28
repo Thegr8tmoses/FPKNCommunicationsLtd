@@ -44,7 +44,7 @@ function handleResponsiveNavbar() {
         const iconElement = link.querySelector('.nav-icon');
         
         if (screenWidth <= 400) {
-            btn.style.right = '10px';
+            btn.style.left = '70px';
             btn.style.display = 'block';
             textElement.style.display = 'none';
             iconElement.style.display = 'block';
@@ -62,6 +62,7 @@ function handleResponsiveNavbar() {
         }
         else if (screenWidth <= 750) {
             textElement.style.display = 'none';
+            btn.style.left = '70px';
             btn.style.right = '20px';
             btn.style.top = '10px';
             logotext.style.display = 'none';
@@ -78,6 +79,7 @@ function handleResponsiveNavbar() {
         }else {
             textElement.style.display = 'block';
             iconElement.style.display = 'none';
+            btn.style.left = '95%';
             btn.style.right = '20px';
             logotext.style.display = 'block';
             navicons.style.position = 'absolute';
