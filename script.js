@@ -40,7 +40,7 @@ function handleResponsiveNavbar() {
             iconElement.style.display = 'block';
             navicons.style.position = 'relative';
             navicons.style.right = '0px';
-            btn.style.right = '50px';
+            btn.style.right = '20%';
             navicons.style.marginTop = '-15px';
             nav.innerWidth = '80%';
             services.style.width = '65%';
@@ -55,6 +55,7 @@ function handleResponsiveNavbar() {
             iconElement.style.display = 'block';
             navicons.style.position = 'relative';
             navicons.style.right = '0px';
+            btn.style.right = '20px';
             navicons.style.marginTop = '-15px';
             nav.innerWidth = '80%';
             services.style.width = '65%';
@@ -69,6 +70,7 @@ function handleResponsiveNavbar() {
             navicons.style.marginTop = '0px';
             navicons.style.right = '60px';
             services.style.width = '85%';
+            btn.style.right = '20px';
             servtext.style.display = 'block';
             servimg.style.display = 'none';
             servbtn.style.width = '25%';
